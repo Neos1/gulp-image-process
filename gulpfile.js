@@ -3,7 +3,7 @@ const gulp = require('gulp')
 const path = require('path')
 
 gulp.task('images', () => {
-  let imageFolder = path.resolve('test', 'ressources', 'src', '1.jpg')
+  let imageFolder = path.resolve('test', 'resources', 'src', '1.jpg')
   return (
     gulp
       .src(imageFolder)
@@ -15,7 +15,7 @@ gulp.task('images', () => {
       //     verboseLogging: true,
       //     multipleResize: [150,300],
       //     watermark: {
-      //       filePath: 'test/ressources/src/watermark.png',
+      //       filePath: 'test/resources/src/watermark.png',
       //       position: 'north',
       //       margin: 50
       //     }
@@ -25,9 +25,9 @@ gulp.task('images', () => {
         imageProcess({
           quality: 100,
           watermark: {
-            filePath: 'test/ressources/src/watermark.png',
+            filePath: 'test/resources/src/watermark.png',
             position: 'northwest',
-            resize: false,
+            isCover: true,
           }
         })
       )

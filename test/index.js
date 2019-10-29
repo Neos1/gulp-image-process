@@ -12,9 +12,9 @@ const Vinyl = require('vinyl')
 
 const Readable = require('stream').Readable
 
-let resultFolder = path.resolve('test/ressources/result')
-let expectedFolder = path.resolve('test/ressources/expected')
-let ressourceFolder = path.resolve('test/ressources/src')
+let resultFolder = path.resolve('test/resources/result')
+let expectedFolder = path.resolve('test/resources/expected')
+let ressourceFolder = path.resolve('test/resources/src')
 
 let comparer = function (pathExpected, pathResult) {
   return new Rembrandt({

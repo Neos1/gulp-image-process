@@ -17,7 +17,7 @@ const gulp = require('gulp')
 const path = require('path')
 
 gulp.task('images', () => {
-  let imageFolder = path.resolve('test', 'ressources', 'src', '*.jpg')
+  let imageFolder = path.resolve('test', 'resources', 'src', '*.jpg')
   return gulp
     .src(imageFolder)
     .pipe(
@@ -25,16 +25,16 @@ gulp.task('images', () => {
         verboseLogging: true,
         progressive:true,
         width:200,
-        heigth:200,
+        height:200,
         output: 'webp',
         ignoreRatio:false,
         multipleResize: [150,300],
         watermark: {
-          filePath: 'test/ressources/src/watermark.png',
+          filePath: 'test/resources/src/watermark.png',
           position: 'north',
           maxSize: 20,
           margin: 30,
-          resize: true
+          isCover: true
         }
       })
     )
@@ -99,12 +99,12 @@ Is Mandatory: `True`
 
 Path of the watermark file.
 
-##### options.watermark.resize
+##### options.watermark.isCover
 Type: `Boolean`<br>
 Is Mandatory: `True`
 
-Do I need a watermark resize.<br>
-If false watermark clipped
+If `true` & watermark size bigger<br>
+then image - clipped by edges
 
 ##### options.watermark.position
 Type: `String`<br>
