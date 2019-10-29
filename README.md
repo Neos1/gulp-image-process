@@ -114,6 +114,11 @@ Size water mark pattern. Use if `isCover=true`. <br>
 If `sizePattern` bigger than waterMark width or<br>
 height set min value from this values
 
+##### options.watermark.positionPattern
+Type: `String`<br>
+Default: `'left top'`
+Is Mandatory: `False`
+
 ##### options.watermark.position
 Type: `String`<br>
 Default: `''`<br>
