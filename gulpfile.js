@@ -26,8 +26,8 @@ gulp.task('images', () => {
           quality: 100,
           watermark: {
             filePath: 'test/ressources/src/watermark.png',
-            position: 'dsadas',
-            maxSize: 20
+            position: 'northwest',
+            resize: false,
           }
         })
       )

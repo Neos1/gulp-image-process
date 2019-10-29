@@ -33,7 +33,8 @@ gulp.task('images', () => {
           filePath: 'test/ressources/src/watermark.png',
           position: 'north',
           maxSize: 20,
-          margin: 30
+          margin: 30,
+          resize: true
         }
       })
     )
@@ -97,6 +98,13 @@ Default: `''`<br>
 Is Mandatory: `True`
 
 Path of the watermark file.
+
+##### options.watermark.resize
+Type: `Boolean`<br>
+Is Mandatory: `True`
+
+Do I need a watermark resize.<br>
+If false watermark clipped
 
 ##### options.watermark.position
 Type: `String`<br>
