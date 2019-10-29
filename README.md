@@ -106,6 +106,14 @@ Is Mandatory: `True`
 If `true` & watermark size bigger<br>
 then image - clipped by edges
 
+##### options.watermark.sizePattern
+Type: `Number`<br>
+Is Mandatory: `True`
+
+Size water mark pattern. Use if `isCover=true`. <br>
+If `sizePattern` bigger than waterMark width or<br>
+height set min value from this values
+
 ##### options.watermark.position
 Type: `String`<br>
 Default: `''`<br>
